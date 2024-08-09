@@ -1,0 +1,90 @@
+/* Stories Feed */
+.feed-text {
+  margin-left: 18px;
+}
+
+.popular {
+  color: #7f7f7f;
+}
+
+.popular:hover {
+  color: black;
+}
+
+/* Feed Gallery */
+.feed-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.feed-units {
+  display: block;
+  cursor: pointer;
+}
+
+.feed-user-info,
+.feed-notifications,
+.feed-user-likes,
+.feed-user-comments {
+  display: flex;
+  align-items: center;
+}
+
+.feed-user {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 4px;
+  object-fit: cover;
+}
+
+.feed-user-handle {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.feed-user-likes,
+.feed-user-comments {
+  margin-left: 10px;
+}
+
+.gg-heart,
+.gg-comment {
+  --ggs: 0.8;
+}
+
+.feed-notification {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.feed-gallery-scroll {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 334px);
+  min-height: 500px;
+  overflow-y: auto;
+  padding-right: 12px;
+}
+
+.feed-gallery {
+  line-height: 20px;
+
+
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.feed-gallery .feed-img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 16px;
+}

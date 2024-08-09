@@ -1,0 +1,138 @@
+/* Nav Left */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  width: 100%;
+}
+
+.search-container {
+  position: relative;
+  background-color: #f6f6f6;
+  width: 200px;
+  height: 32px;
+  border-radius: 25px;
+  border: 1px solid #7f7f7f40;
+  visibility: visible;
+}
+
+
+.input-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+input[type="text"] {
+  margin-left: 40px;
+  color: #7f7f7f;
+}
+
+.search-input {
+  background-color: #f6f6f6;
+  border: none;
+  width: 170px;
+  height: 30px;
+  border-radius: 25px;
+}
+
+
+.search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.fa-search {
+  position: absolute;
+  font-size: 20px;
+  margin-left: 10px;
+  color: #7f7f7f;
+  top: 6px;
+}
+
+.search-container:hover,
+.search-input:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+/* Nav Right */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.notification-container,
+.email-container {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding-right: 4px;
+}
+
+.notification-container {
+  margin-right: 10px;
+}
+
+.nav-bell,
+.nav-mail {
+  margin: auto;
+  margin-top: 6px;
+  scale: 1;
+  transition: scale .3s linear;
+}
+
+.nav-mail {
+  margin-top: 8px;
+}
+
+.nav-bell:hover,
+.nav-mail:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.add-photo-btn {
+  display: flex;
+  align-items: center;
+  background: #fd1d1d;
+  background: linear-gradient(to right,
+      #fd1d1d, #fcb045);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 20px;
+  transition: all .3s linear;
+}
+
+.add-photo-btn:hover {
+  padding: 8px 20px;
+  background: linear-gradient(to right,
+      #ff0000, #ff9500);
+  cursor: pointer;
+}
+
+.gg-add {
+  color: white;
+  --ggs: 0.8;
+  margin-right: 4px;
+}

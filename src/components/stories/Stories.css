@@ -1,0 +1,100 @@
+/* Stories */
+.stories-container,
+.feed-container {
+  margin-top: 20px;
+}
+
+.stories-text-container,
+.feed-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stories-tab-link,
+.feed-tab-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.stories-title,
+.feed-title {
+  font-size: 28px;
+}
+
+.stories-icon {
+  color: #7f7f7f;
+  margin-right: 8px;
+}
+
+.stories-text,
+.feed-text {
+  color: black;
+  font-weight: 600;
+}
+
+/* Stories Profile Images */
+.fogged {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+
+.fogged-img {
+  position: relative;
+  padding: 4px;
+  padding: 4px;
+  border: 3px solid rgba(127, 127, 127, 25%);
+  filter: grayscale(1);
+  transition: filter .3s linear;
+}
+
+.fogged-img:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+.stories-plus {
+  position: absolute;
+  width: 0;
+  margin: 0;
+  color: white;
+  font-weight: 200;
+  top: 39px;
+  left: 49px;
+  z-index: 1;
+  scale: 1;
+  transition: scale .3s linear;
+}
+
+.stories-plus:hover {
+  scale: 1.1;
+}
+
+.stories-profile-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+  overflow-x: auto;
+}
+
+.stories-profile-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.feed-gallery-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.stories-profile-container::-webkit-scrollbar-track,
+.feed-gallery-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px lightgrey;
+  border-radius: 10px;
+}
+
+.stories-profile-container::-webkit-scrollbar-thumb,
+.feed-gallery-scroll::-webkit-scrollbar-thumb {
+  background-color: #C1C1C1;
+  border-radius: 10px;
+}
